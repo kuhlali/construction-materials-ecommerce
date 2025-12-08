@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Devkisteel Maishamabati | Steel Doors & Construction Materials
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="shortcut icon" href="static/images/cropped-MABATI_MAISHA_LOGO2-120x95.webp" type="image/x-icon">
+  </head>
+  <body>
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/254754516464?text=Hello%20Devkisteel%20Maishamabati%2C%20I%20need%20information%20about%20your%20products"
+      class="whatsapp-btn"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span>Chat Now</span>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+        <button class="cart-close">&times;</button>
+      </div>
+
+      <div class="cart-items">
+        <!-- Cart items will be added here dynamically -->
+        <div class="cart-empty">
+          <i class="fas fa-shopping-cart"></i>
+          <p>Your cart is empty</p>
+          <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-price">KES 0</span>
+        </div>
+        <div class="cart-actions">
+          <button class="btn btn-secondary cart-clear">Clear Cart</button>
+          <button class="btn btn-primary cart-checkout">
+            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-content">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call Us: <a href="tel:+254754516464">+254-754-516-464</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-link logo-container">
+            <!-- Replace "images/logo.png" with your actual logo file path -->
+            <img
+              src="static/images/cropped-MABATI_MAISHA_LOGO2-120x95.webp"
+              alt="Devkisteel Maishamabati Logo"
+              class="logo-img"
+            />
+            <div class="logo-text">
+              <h1><span class="logo-highlight">DEVKI</span>STEEL</h1>
+              <p class="logo-subtitle">Maisha Mabati Mills Limited</p>
+            </div>
+          </a>
+
+          <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="manufacturing.html" class="nav-link">Manufacturing</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link contact-btn">Contact</a>
+            <button class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </button>
+          </div>
+
+          <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="hero-title">Quality Steel Solutions for Modern Kenya</h2>
+          <p class="hero-text">
+            Manufacturers of durable steel doors, windows, and construction
+            materials. Built to last, priced to value.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-phone"></i> Get Quote
+            </a>
+            <a href="products.html" class="btn btn-secondary">
+              <i class="fas fa-eye"></i> View Products
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="section products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">
+            Our most popular steel products for residential and commercial use
+          </p>
+        </div>
+
+        <div class="products-grid featured-grid">
+          <!-- Featured Product 1 -->
+          <div class="product-card" data-category="doors">
+            <div class="product-badge">Best Seller</div>
+            <div class="product-icon">
+              <img src="static/images/Aluzinc.jpeg" alt="Maisha Aluzinc Mabati">
+            </div>
+            <h3 class="product-title">Maisha Aluzinc Mabati</h3>
+            <!-- <p class="product-desc"> -->
+
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 250</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="1"
+                data-name="Maisha Aluzinc Mabati"
+                data-price="250"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="1"
+                data-name="Maisha Aluzinc Mabati"
+                data-price="250"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Product 2 -->
+          <div class="product-card" data-category="maishamabati">
+            <div class="product-badge">Popular</div>
+            <div class="product-icon">
+              <img src="static/images/Versatile.jpeg" alt="Maisha Versatile Mabati">
+            </div>
+            <h3 class="product-title">Maisha Versatile Mabati</h3>
+            <!-- <p class="product-desc">Standard 28 gauge corrugated iron sheets</p> -->
+            <div class="product-price">
+              <span class="price">KES 580</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="6"
+                data-name="Maisha Versatile Mabati"
+                data-price="580"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="6"
+                data-name="Maisha Versatile Mabati"
+                data-price="580"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Product 3 -->
+          <div class="product-card" data-category="gates">
+            <div class="product-icon">
+              <img src="static/images/Roman.jpeg" alt="Maisha Roman Tile">
+            </div>
+            <h3 class="product-title">Maisha Roman Tile</h3>
+            <!-- <p class="product-desc"> -->
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 555</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="9"
+                data-name="Maisha Roman Tile"
+                data-price="555"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="9"
+                data-name="Maisha Roman Tile"
+                data-price="555"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Product 4 -->
+          <div class="product-card" data-category="windows">
+            <div class="product-icon">
+              <img src="static/images/Box Profile.jpeg" alt="Maisha Box Profile">
+            </div>
+            <h3 class="product-title">Maisha Box Profile</h3>
+            <!-- <p class="product-desc"> -->
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 440</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="5"
+                data-name="Maisha Box Profile"
+                data-price="440"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="5"
+                data-name="Maisha Box Profile"
+                data-price="440"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-more-container">
+          <a href="products.html" class="btn btn-secondary view-more-btn">
+            <i class="fas fa-arrow-right"></i> View All Products
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">
+            Comprehensive solutions from measurement to installation
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-number">01</div>
+            <h3 class="service-title">Custom Fabrication</h3>
+            <p class="service-desc">
+              Tailored designs made to your exact specifications and
+              measurements.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <div class="service-number">02</div>
+            <h3 class="service-title">Professional Installation</h3>
+            <p class="service-desc">
+              Expert installation by our trained technicians for perfect
+              fitting.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <div class="service-number">03</div>
+            <h3 class="service-title">Delivery Nationwide</h3>
+            <p class="service-desc">
+              Reliable delivery service across Kenya at competitive rates.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <div class="service-number">04</div>
+            <h3 class="service-title">Free Consultation</h3>
+            <p class="service-desc">
+              Get expert advice and quotes for your construction projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="section-title">Why Choose Devkisteel?</h2>
+            <p class="about-text">
+              With over 10 years in the industry, we've built our reputation on
+              quality craftsmanship, timely delivery, and exceptional customer
+              service.
+            </p>
+
+            <div class="features">
+              <div class="feature">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <div>
+                  <h4>Premium Quality</h4>
+                  <p>Using grade A materials for durability and longevity.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <div>
+                  <h4>Expert Craftsmanship</h4>
+                  <p>
+                    Skilled artisans with years of experience in steel
+                    fabrication.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <div>
+                  <h4>Timely Delivery</h4>
+                  <p>We respect your timeline and deliver as promised.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <i class="fas fa-check-circle feature-icon"></i>
+                <div>
+                  <h4>Affordable Pricing</h4>
+                  <p>Competitive prices without compromising on quality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <div class="image-frame">
+              <img
+                src="static/images/steel manufacturing.avif"
+                alt="Steel Manufacturing"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get Your Free Quote</h2>
+          <p class="section-subtitle">
+            Contact us for pricing, measurements, or any questions
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone contact-icon"></i>
+              <div>
+                <h4>Call Us</h4>
+                <p>+254-754-516-464</p>
+                <!-- <p>+254-711-000-000</p> -->
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>info@devkisteel.com</p>
+                <p>sales@devkisteel.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <div>
+                <h4>Visit Us</h4>
+                <p>Industrial Area, Nairobi</p>
+                <p>Open: Mon-Fri 8AM-5PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="quoteForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="tel" placeholder="Phone Number" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <select required>
+                  <option value="">Select Product Interest</option>
+                  <option value="doors">Steel Doors</option>
+                  <option value="windows">Steel Windows</option>
+                  <option value="maishamabati">Maishamabati Sheets</option>
+                  <option value="gates">Security Gates</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  placeholder="Project Details / Message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-paper-plane"></i> Send Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo-container">
+              <img src="static/images/cropped-MABATI_MAISHA_LOGO2-120x95.webp" alt="Devkisteel Logo" class="footer-logo">
+              <div>
+                <h3 class="footer-logo-text">DEVKISTEEL</h3>
+                <p class="footer-subtitle">Maisha Mabati Mills Limited</p>
+              </div>
+            </div>
+            <p>Leading manufacturers of quality steel products in Kenya since 2010.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/254754516464" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Our Products</h4>
+            <a href="products.html">Steel Doors</a>
+            <a href="products.html">Steel Windows</a>
+            <a href="products.html">Maishamabati</a>
+            <a href="products.html">Security Gates</a>
+            <a href="products.html">Construction Materials</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Head Office Ruiru, Kamiti Road
+              <p>P.O. Box 33319-00600 Nairobi</p>
+            </p>
+            <p><i class="fas fa-phone"></i> +254-754-516-464</p>
+            <p><i class="fas fa-envelope"></i> info@devkisteel.com</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Devkisteel Maishamabati. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

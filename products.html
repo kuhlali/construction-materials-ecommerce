@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products | Devkisteel Maishamabati</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="shortcut icon" href="static/images/cropped-MABATI_MAISHA_LOGO2-120x95.webp" type="image/x-icon">
+  </head>
+  <body>
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/254754516464?text=Hello%20Devkisteel%20Maishamabati%2C%20I%20need%20information%20about%20your%20products"
+      class="whatsapp-btn"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span>Chat Now</span>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+        <button class="cart-close">&times;</button>
+      </div>
+
+      <div class="cart-items">
+        <div class="cart-empty">
+          <i class="fas fa-shopping-cart"></i>
+          <p>Your cart is empty</p>
+          <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-price">KES 0</span>
+        </div>
+        <div class="cart-actions">
+          <button class="btn btn-secondary cart-clear">Clear Cart</button>
+          <button class="btn btn-primary cart-checkout">
+            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-content">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call Us: <a href="tel:+254754516464">+254-754-516-464</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-link logo-container">
+            <!-- Replace "images/logo.png" with your actual logo file path -->
+            <img
+              src="static/images/cropped-MABATI_MAISHA_LOGO2-120x95.webp"
+              alt="Devkisteel Maishamabati Logo"
+              class="logo-img"
+            />
+            <div class="logo-text">
+              <h1><span class="logo-highlight">DEVKI</span>STEEL</h1>
+              <p class="logo-subtitle">Maisha Mabati Mills Limited</p>
+            </div>
+          </a>
+
+          <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="manufacturing.html" class="nav-link">Manufacturing</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link contact-btn">Contact</a>
+            <button class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </button>
+          </div>
+
+          <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Products Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1>Our Products</h1>
+          <p>Browse our complete range of quality steel products</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Products Section -->
+    <section class="section all-products-section" id="allProducts" >
+      <div class="container">
+        <div class="products-header">
+          <h2 class="section-title">All Products</h2>
+          <p class="product-count">
+            <span id="productCount">12</span> products available
+          </p>
+        </div>
+
+        <div class="products-grid" id="productsContainer">
+          <!-- Featured Product 1 -->
+          <div class="product-card" data-category="maishamabati">
+            <div class="product-badge">Best Seller</div>
+            <div class="product-icon">
+              <img src="static/images/Aluzinc.jpeg" alt="Maisha Aluzinc Mabati">
+            </div>
+            <h3 class="product-title">Maisha Aluzinc Mabati</h3>
+            <!-- <p class="product-desc"> -->
+
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 250</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="1"
+                data-name="Maisha Aluzinc Mabati"
+                data-price="250"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="1"
+                data-name="Maisha Aluzinc Mabati"
+                data-price="250"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Product 2 -->
+          <div class="product-card" data-category="maishamabati">
+            <div class="product-badge">Popular</div>
+            <div class="product-icon">
+              <img src="static/images/Versatile.jpeg" alt="Maisha Versatile Mabati">
+            </div>
+            <h3 class="product-title">Maisha Versatile Mabati</h3>
+            <!-- <p class="product-desc">Standard 28 gauge corrugated iron sheets</p> -->
+            <div class="product-price">
+              <span class="price">KES 580</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="6"
+                data-name="Maisha Versatile Mabati"
+                data-price="580"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="6"
+                data-name="Maisha Versatile Mabati"
+                data-price="580"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Product 3 -->
+          <div class="product-card" data-category="gates">
+            <div class="product-icon">
+              <img src="static/images/Roman.jpeg" alt="Maisha Roman Tile">
+            </div>
+            <h3 class="product-title">Maisha Roman Tile</h3>
+            <!-- <p class="product-desc"> -->
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 555</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="9"
+                data-name="Maisha Roman Tile"
+                data-price="555"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="9"
+                data-name="Maisha Roman Tile"
+                data-price="555"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Product 4 -->
+          <div class="product-card" data-category="windows">
+            <div class="product-icon">
+              <img src="static/images/Box Profile.jpeg" alt="Maisha Box Profile">
+            </div>
+            <h3 class="product-title">Maisha Box Profile</h3>
+            <!-- <p class="product-desc"> -->
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 440</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="5"
+                data-name="Maisha Box Profile"
+                data-price="440"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="5"
+                data-name="Maisha Box Profile"
+                data-price="440"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card" data-category="cement" data-price="550">
+            <div class="product-icon">
+              <!-- <i class="fas fa-window-restore"></i> -->
+               <img src="static/images/simba-cement.jpeg" alt="Simba Cement bag">
+            </div>
+            <h3 class="product-title">Simba Cement</h3>
+            <!-- <p class="product-desc"> -->
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 550</span>
+              <span class="price-unit">per bag</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="8"
+                data-name="Simba Cement"
+                data-price="550"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="8"
+                data-name="Simba Cement"
+                data-price="550"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div
+            class="product-card"
+            data-category="Building Steel and Binding Wire"
+            data-price="210"
+          >
+            <div class="product-badge">Popular</div>
+            <div class="product-icon">
+              <!-- <i class="fas fa-ruler-combined"></i> -->
+               <img src="static/images/building-steel-Binding-Wire.jpeg" alt="Building Steel and Binding Wire">
+            </div>
+            <h3 class="product-title">Building Steel and Binding Wire</h3>
+            <!-- <p class="product-desc"> -->
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 210</span>
+              <!-- <span class="price-unit">per sheet</span> -->
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="10"
+                data-name="Building Steel and Binding Wire"
+                data-price="210"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="10"
+                data-name="Building Steel and Binding Wire"
+                data-price="210"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div
+            class="product-card"
+            data-category="maishamabati"
+            data-price="400"
+          >
+            <div class="product-icon">
+              <!-- <i class="fas fa-building"></i> -->
+               <img src="static/images/Dumuzas Corrugated.jpeg" alt="Maisha Dumuzas Corrugated sheets">
+            </div>
+            <h3 class="product-title">Maisha Dumuzas Corrugated</h3>
+            <!-- <p class="product-desc"> -->
+            <!-- </p> -->
+            <div class="product-price">
+              <span class="price">KES 400</span>
+              <span class="price-unit">per meter</span>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="11"
+                data-name="Maisha Dumuzas Corrugated"
+                data-price="400"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="11"
+                data-name="Maisha Dumuzas Corrugated"
+                data-price="400"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <!-- <div class="product-card" data-category="gates" data-price="25000">
+            <div class="product-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="product-title">Manual Rolling Gate</h3>
+            <p class="product-desc">
+              Manual rolling security gate with lock. Heavy-duty construction.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 25,000</span>
+              <span class="price-unit">per gate</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="8"
+                data-name="Manual Rolling Gate"
+                data-price="25000"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="8"
+                data-name="Manual Rolling Gate"
+                data-price="25000"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Product 9 -->
+          <!-- <div class="product-card" data-category="gates" data-price="45000">
+            <div class="product-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="product-title">Automatic Rolling Gate</h3>
+            <p class="product-desc">
+              Motorized automatic gate with remote control. Complete
+              installation.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 45,000</span>
+              <span class="price-unit">per gate</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="9"
+                data-name="Automatic Rolling Gate"
+                data-price="45000"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="9"
+                data-name="Automatic Rolling Gate"
+                data-price="45000"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Product 10 -->
+          <!-- <div class="product-card" data-category="gates" data-price="3500">
+            <div class="product-icon">
+              <i class="fas fa-grip-horizontal"></i>
+            </div>
+            <h3 class="product-title">Window Security Grill</h3>
+            <p class="product-desc">
+              Decorative security grills for windows. Custom designs available.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 3,500</span>
+              <span class="price-unit">per grill</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="10"
+                data-name="Window Security Grill"
+                data-price="3500"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="10"
+                data-name="Window Security Grill"
+                data-price="3500"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Product 11 -->
+          <!-- <div class="product-card" data-category="materials" data-price="200">
+            <div class="product-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="product-title">Roofing Nails (Galvanized)</h3>
+            <p class="product-desc">
+              High-quality galvanized roofing nails for maishamabati sheets.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 200</span>
+              <span class="price-unit">per kg</span>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="11"
+                data-name="Roofing Nails (Galvanized)"
+                data-price="200"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="11"
+                data-name="Roofing Nails (Galvanized)"
+                data-price="200"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Product 12 -->
+          <!-- <div class="product-card" data-category="gates" data-price="12000">
+            <div class="product-icon">
+              <i class="fas fa-fence"></i>
+            </div>
+            <h3 class="product-title">Pedestrian Gate</h3>
+            <p class="product-desc">
+              Small pedestrian access gate with security lock. Various designs.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 12,000</span>
+              <span class="price-unit">per gate</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="12"
+                data-name="Pedestrian Gate"
+                data-price="12000"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="12"
+                data-name="Pedestrian Gate"
+                data-price="12000"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Product 13 -->
+          <!-- <div class="product-card" data-category="windows" data-price="5500">
+            <div class="product-icon">
+              <i class="fas fa-window-frame"></i>
+            </div>
+            <h3 class="product-title">Fixed Steel Window</h3>
+            <p class="product-desc">
+              Fixed steel windows for ventilation and natural light. No opening
+              mechanism.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 5,500</span>
+              <span class="price-unit">per window</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="13"
+                data-name="Fixed Steel Window"
+                data-price="5500"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="13"
+                data-name="Fixed Steel Window"
+                data-price="5500"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Product 14 -->
+          <!-- <div
+            class="product-card"
+            data-category="maishamabati"
+            data-price="950"
+          >
+            <div class="product-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3 class="product-title">32G Maishamabati Sheet</h3>
+            <p class="product-desc">
+              Lightweight 32 gauge sheets for temporary structures and sheds.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 950</span>
+              <span class="price-unit">per sheet</span>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="14"
+                data-name="32G Maishamabati Sheet"
+                data-price="950"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="14"
+                data-name="32G Maishamabati Sheet"
+                data-price="950"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Product 15 -->
+          <!-- <div class="product-card" data-category="doors" data-price="18000">
+            <div class="product-badge">Premium</div>
+            <div class="product-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3 class="product-title">Premium Security Door</h3>
+            <p class="product-desc">
+              High-security door with multiple locking points and reinforced
+              steel.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 18,000</span>
+              <span class="price-unit">per door</span>
+            </div>
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="15"
+                data-name="Premium Security Door"
+                data-price="18000"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="15"
+                data-name="Premium Security Door"
+                data-price="18000"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 16 -->
+          <!-- <div class="product-card" data-category="materials" data-price="150">
+            <div class="product-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="product-title">Steel Hinges</h3>
+            <p class="product-desc">
+              Heavy-duty steel hinges for doors and gates. Various sizes
+              available.
+            </p>
+            <div class="product-price">
+              <span class="price">KES 150</span>
+              <span class="price-unit">per pair</span>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="100"
+                />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <button
+                class="btn btn-primary add-to-cart"
+                data-id="16"
+                data-name="Steel Hinges"
+                data-price="150"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+              <button
+                class="btn buy-now"
+                data-id="16"
+                data-name="Steel Hinges"
+                data-price="150"
+              >
+                <i class="fas fa-bolt"></i> Buy Now
+              </button>
+            </div
+          </div> -->
+          <!-- Product 16: Steel Hinges (Commented Out) -->
+        <!-- </div> -->
+
+        <div class="load-more-container">
+          <button class="btn btn-secondary load-more-btn" id="loadMoreBtn">
+            <i class="fas fa-arrow-down"></i> Load More Products
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- In the footer section, update the first footer-col -->
+          <div class="footer-col">
+            <div class="footer-logo-container">
+              <img src="static/images/cropped-MABATI_MAISHA_LOGO2-120x95.webp" alt="Devkisteel Logo" class="footer-logo">
+              <div>
+                <h3 class="footer-logo-text">DEVKISTEEL</h3>
+                <p class="footer-subtitle">Maisha Mabati Mills Limited</p>
+              </div>
+            </div>
+            <p>Leading manufacturers of quality steel products in Kenya since 2010.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/254754516464" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Product Categories</h4>
+            <a href="products.html?category=doors">Steel Doors</a>
+            <a href="products.html?category=windows">Steel Windows</a>
+            <a href="products.html?category=maishamabati">Maishamabati</a>
+            <a href="products.html?category=gates">Security Gates</a>
+            <a href="products.html?category=materials"
+              >Construction Materials</a
+            >
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i> 
+              <span>Head Office Ruiru, Kamiti Road<br>P.O. Box 33319-00600 Nairobi</span>
+            </div>
+            <p><i class="fas fa-phone"></i> +254-754-516-464</p>
+            <p><i class="fas fa-envelope"></i> info@devkisteel.com</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Devkisteel Maishamabati. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+    <script src="static/js/products.js"></script>
+  </body>
+</html>
