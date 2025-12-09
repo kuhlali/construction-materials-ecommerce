@@ -188,6 +188,10 @@ a {
     align-items: center;
 }
 
+.mobile-cart {
+    display: none; /* Hide mobile cart on desktop */
+}
+
 .cart-btn:hover {
     color: var(--primary-color);
 }
@@ -772,20 +776,24 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .navbar-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
     .desktop-cart {
         display: none; /* Hide the desktop cart button on mobile */
     }
-}
-@media (max-width: 992px) {
-    .cart-btn {
-        position: fixed;
-        top: 24px;
-        right: 70px; /* Position it to the left of the hamburger menu */
-        display: inline-flex; /* Make sure it's visible */
+
+    .mobile-cart {
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
-        z-index: 999;
-        color: #333; /* Ensure it's visible on the white header */
+    }
+
+    .cart-btn.mobile-cart {
+        position: static; /* Remove fixed positioning */
+        color: #333;
     }
 }
 
