@@ -795,6 +795,10 @@ a {
         position: static; /* Remove fixed positioning */
         color: #333;
     }
+
+    .nav-menu .desktop-cart {
+        display: none; /* Explicitly hide the desktop cart button inside the mobile menu */
+    }
 }
 
 
