@@ -438,22 +438,32 @@ class ShoppingCart {
 
 // Mobile Navigation Toggle
 const mobileToggle = document.querySelector('.mobile-toggle');
+const mobileClose = document.querySelector('.mobile-close');
 const navMenu = document.querySelector('.nav-menu');
+const body = document.querySelector('body');
 
 if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileToggle.innerHTML = navMenu.classList.contains('active') 
-            ? '<i class="fas fa-times"></i>' 
-            : '<i class="fas fa-bars"></i>';
+        navMenu.classList.add('active');
+        body.style.overflow = 'hidden'; // Prevent background scrolling
     });
+}
 
+if (mobileClose && navMenu) {
+    mobileClose.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        body.style.overflow = ''; // Restore scrolling
+    });
+}
+
+// Optional: Close menu if a nav link is clicked
+if (navMenu) {
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            if (mobileToggle) {
-                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                body.style.overflow = '';
             }
         });
     });
