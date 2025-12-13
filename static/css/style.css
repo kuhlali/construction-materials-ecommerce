@@ -100,6 +100,7 @@ a {
 .header-top-content {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     align-items: center;
     gap: 8px;
 }
@@ -794,6 +795,12 @@ a {
     .cart-btn.mobile-cart {
         position: static; /* Remove fixed positioning */
         color: #333;
+    }
+
+    .header-top-content {
+        justify-content: center; /* Center the content on mobile */
+        text-align: center;
+        font-size: 0.85rem; /* Slightly reduce font size */
     }
 
     .nav-menu .desktop-cart {
